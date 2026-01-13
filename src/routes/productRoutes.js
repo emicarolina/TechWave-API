@@ -6,13 +6,17 @@ import {
   updateProduct,
   deleteProduct,
 } from "../controllers/productController.js";
+import { protect, isAdmin } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-router.post("/products", createProduct);
+// Rotas públicas (qualquer um pode acessar)
 router.get("/products", getAllProducts);
 router.get("/products/:id", getProductById);
-router.put("/products/:id", updateProduct);
-router.delete("/products/:id", deleteProduct);
+
+// Rotas protegidas (apenas ADMIN pode acessar)
+router.post("/products", protect, isAdmin, createProduct);
+router.put("/products/:id", protect, isAdmin, updateProduct);
+router.delete("/products/:id", protect, isAdmin, deleteProduct);
 
 export default router;
