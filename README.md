@@ -15,7 +15,7 @@ API REST privada desenvolvida exclusivamente para o projeto TechWave, responsáv
 - CORS
 - Vercel - Deploy
 
-## 🔒 Segurança e Autenticação
+## Segurança e Autenticação
 - Autenticação baseada em JWT
 - Senhas armazenadas de forma segura com bcrypt
 - Middleware de Proteção: Validação de tokens em rotas protegidas
@@ -23,7 +23,7 @@ API REST privada desenvolvida exclusivamente para o projeto TechWave, responsáv
 - Validação de Dados: Mongoose schemas com validações
 - CORS: Configurado para aceitar apenas origens autorizadas
 
-## 📊 Modelos de Dados
+## Modelos de Dados
 ### USER
 ```
 {
