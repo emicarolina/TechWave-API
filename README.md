@@ -1,29 +1,31 @@
 # TechWave API
-API REST privada desenvolvida exclusivamente para o projeto TechWave, responsável por fornecer toda a infraestrutura backend do e-commerce de tecnologia. A aplicação realiza autenticação de usuários via JWT, gerenciamento completo de produtos e controle de acesso baseado em roles (customer/admin), garantindo segurança e organização nas permissões do sistema.
+A private REST API developed exclusively for the TechWave project, responsible for providing the entire backend infrastructure of a technology e-commerce platform.  
+The application handles user authentication via JWT, full product management, and role-based access control (customer/admin), ensuring security and organized permission handling across the system.
 
-## 🔗 Repositório do projeto: [TechWave](https://github.com/emicarolina/TechWave)
+## 🔗 Main Project Repository: [TechWave](https://github.com/emicarolina/TechWave)
 
-### ⚠️ API Privada
-> Importante: Esta é uma API REST privada, hospedada na Vercel e utilizada exclusivamente pelo front-end do projeto. O repositório é público apenas para fins de portfólio e demonstração de código. As rotas sensíveis são protegidas por autenticação JWT e controle de permissões.
+### ⚠️ Private API
+> Important: This is a **private REST API**, hosted on Vercel and used exclusively by the project's front-end application.  
+> The repository is public for **portfolio and code demonstration purposes only**. Sensitive routes are protected using JWT authentication and role-based authorization.
 
-## Tecnologias Utilizadas
+## Technologies Used
 - JavaScript (Node.js)
-- Express
-- MongoDB com Mongoose
+- Express.js
+- MongoDB with Mongoose
 - JWT (jsonwebtoken)
-- Bcrypt.js (criptografia de senhas)
+- Bcrypt.js (password hashing)
 - CORS
-- Vercel - Deploy
+- Vercel (deployment)
 
-## Segurança e Autenticação
-- Autenticação baseada em JWT
-- Senhas armazenadas de forma segura com bcrypt
-- Middleware de Proteção: Validação de tokens em rotas protegidas
-- Controle de Permissões: Verificação de role (admin/customer)
-- Validação de Dados: Mongoose schemas com validações
-- CORS: Configurado para aceitar apenas origens autorizadas
+## Security & Authentication
+- JWT-based authentication
+- Secure password storage using bcrypt hashing
+- Route Protection Middleware: token validation on protected routes
+- Role-Based Access Control: admin and customer roles
+- Data Validation: Mongoose schemas with built-in validations
+- CORS: configured to allow only authorized origins
 
-## Modelos de Dados
+## Data Models
 ### USER
 ```
 {
@@ -50,5 +52,5 @@ API REST privada desenvolvida exclusivamente para o projeto TechWave, responsáv
 }
 ```
 
-## 👩‍💻 Desenvolvido por Emilly
-Se você chegou até aqui, obrigada por conferir o projeto! 🤍
+## 👩‍💻 Developed by Emilly
+If you made it this far, thank you for checking out the project! 🤍
